@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegisterActivity" >
+
+        <EditText
+            android:id="@+id/regis_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_name"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="#372c24" />
+
+        <TextView
+            android:id="@+id/label_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regis_edit_name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/surname"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFDDDDDD" />
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFDDDDDD" />
+
+        <EditText
+            android:id="@+id/regis_edit_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_surname"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="@string/surname"
+            android:inputType="textPersonName"
+            android:textColor="#372c24" />
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regis_edit_surname"
+            android:layout_centerHorizontal="true"
+            android:text="@string/valid_email"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFDDDDDD" />
+
+        <EditText
+            android:id="@+id/regis_edit_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_email"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#372c24" />
+
+        <TextView
+            android:id="@+id/label_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regis_edit_email"
+            android:layout_centerHorizontal="true"
+            android:text="@string/valid_pass"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFDDDDDD" />
+
+        <EditText
+            android:id="@+id/regis_edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_password"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#372c24" />
+
+        <Button
+            android:id="@+id/register_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regis_edit_password"
+            android:layout_alignRight="@+id/regis_edit_password"
+            android:layout_below="@+id/regis_edit_password"
+            android:layout_marginTop="20dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/label_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/registration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFDDDDDD"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</ScrollView>
